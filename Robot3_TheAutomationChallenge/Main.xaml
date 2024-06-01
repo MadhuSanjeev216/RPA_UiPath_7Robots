@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1506,9202.666666666666" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="912.8,11020" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -131,7 +131,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Data Capturing From Dynamic Web Environment" sap:VirtualizedContainerService.HintSize="884.6666666666666,9138" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Data Capturing From Dynamic Web Environment" sap:VirtualizedContainerService.HintSize="923.2,10955.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_CompanyData" />
     </Sequence.Variables>
@@ -140,45 +140,45 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Employee Data Excel Process Scope" sap:VirtualizedContainerService.HintSize="822.6666666666666,9050" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="False">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Employee Data Excel Process Scope" sap:VirtualizedContainerService.HintSize="860.8,10866.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="False">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="788.6666666666666,8940" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="827.2,10756.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Employee Excel File" sap:VirtualizedContainerService.HintSize="726.6666666666666,8855.333333333334" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="challenge.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Employee Excel File" sap:VirtualizedContainerService.HintSize="764.8,10670.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="challenge.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Excell Do" sap:VirtualizedContainerService.HintSize="692.6666666666666,8552" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Excell Do" sap:VirtualizedContainerService.HintSize="731.2,10377.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="630.6666666666666,206.66666666666666" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;data&quot;)]" SaveTo="[dt_CompanyData]" />
-                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="False" DisplayName="Use Browser Chrome: The Automation Challenge" sap:VirtualizedContainerService.HintSize="630.6666666666666,8260.666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Version="V2" WindowResize="Maximize">
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="668.8,201.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;data&quot;)]" SaveTo="[dt_CompanyData]" />
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="False" DisplayName="Use Browser Chrome: The Automation Challenge" sap:VirtualizedContainerService.HintSize="668.8,10089.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Version="V2" WindowResize="Maximize">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="596.6666666666666,8018.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="635.2,9849.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcut to Zoom 100%" sap:VirtualizedContainerService.HintSize="534.6666666666666,255.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="SameAsCard" Shortcuts="[d(hk)][d(ctrl)][k(num0)][u(ctrl)][u(hk)]" Version="V3">
+                            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcut to Zoom 100%" sap:VirtualizedContainerService.HintSize="572.8,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="SameAsCard" Shortcuts="[d(hk)][d(ctrl)][k(num0)][u(ctrl)][u(hk)]" Version="V3">
                               <uix:NKeyboardShortcuts.VerifyOptions>
                                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                                   <uix:VerifyExecutionOptions.Retry>
@@ -190,8 +190,8 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NKeyboardShortcuts.VerifyOptions>
                             </uix:NKeyboardShortcuts>
-                            <uix:NNavigateBrowser Action="Refresh" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="534.6666666666666,116.66666666666667" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'The Start Button" sap:VirtualizedContainerService.HintSize="534.6666666666666,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Version="V3">
+                            <uix:NNavigateBrowser Action="Refresh" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="572.8,114.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'The Start Button" sap:VirtualizedContainerService.HintSize="572.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="ab08c19c-cd41-424d-928c-ec1eba61ac0c" CvElementArea="55, 857, 424, 60" CvTextArea="240, 878, 53, 16" CvTextArgument="Start" CvType="Button" DesignTimeRectangle="59, 860, 420, 56" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Start' /&gt;" Guid="f8d3ffee-d68c-44ac-a738-9b8d96614254" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAagAAAA8CAYAAAAzMi4hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQbSURBVHhe7dyxaxRZHMBx0dgE9L+wtPO6q60kVa46BOHA0kZII6RQuELBwuIKhYDXKIIIOaIIEs4rTiQcYUWMyHFJsNiAhGxx3EZEfrdvM2Znd0dzHGb3kfk8+EBm5s3a7Zf3ZtZDnREAkKHKkwAwbsMnj546HJPnJ+LYlaNx/CoAfH2pMak1qTlVLeooHUwcislzRyo/CAD2S2pPalBfk8oH4gTAuHQjVWpSx84faYlVdQMAjMrAdt/OH2kfsGoyAIxKatFQoLwQAcC4pRYNBapqIgCMmkABkCWBAiBLAgVAlgQKgCwJFABZEigAsiRQAGRJoADIkkABkCWBAiBLAgVAlgQKgCwJFABZEigAsiRQAGRJoKifW2fjxl8r0foQvbHdjMab2Ziumg+MhUBRMzPx9J8iShWjvTlXGalL61vFjJW4XXF937xYKf7drXj6pOI6HGACRb0sLRdf+BEbqz/G93dPx/TCbNx79ylAEY2l4fuyCNRixXU4wASKetn9wl+N+Xul87fuxFpxpbU+03fP7c3iQnlsL8al0pyu+9fj8eZWtD8Wcz62o7X5MG7cH5iXNHrheb2+Eq3insYfvTm9KJbHiAMJYyRQ1Mujh7FRfNXH9krMPzsf31bNK/lPgbo3F6/Lz7TK40MnKuUYJruhLI9mPF7ozREo6k6gqJ3pThzaxdd9d3RWOhvNB3Ht0TeV85M9t/ieP4vW+51PXUsvW9yfistvVrvHaay9PNE/vxyovxfj5pOp7j1DsbTFR40JFLV08u5M3E5bawOrnlbzp6/4kkRnVVXcNbht2AtPO57/Xjo/SKCoMYGi5k7EmV/n4nmrt6Zae3V6aN7egToRF18ux8Z239psd3w+UHuER6CoMYGiVnZD8/5ZXOu7dj0axWqq/Xa2dH7HXoE6ubRcbBtuRaMxGz8snO148NkXLwQK9iZQ1MqZV73nQq13d+LywlScuftd93nRp7XPxp9nh+7rBaoZ878MPE8auP70t/Q86ULcXG8W575GoNrRWPr8MzI4iASKern15R/qVr5x13FyNxTF2Jzru14OX9X434FaXIxWMbM7ql5vhwNKoKifqv/q6MNWbDTvxMWfK+Z375mJ+fJvnAYCdfzqVNxYX939PVP6vMZyaYtv9UL//NLvoL68dTcVN982e58rUNSIQAGQJYECIEsCBUCWBAqALAkUAFkSKACyJFAAZEmgAMiSQAGQJYECIEsCBUCWBAqALAkUAFkSKACyJFAAZEmgAMjSUKCOXameCACjklo0FKjJ8xOVkwFgVFKLhgJ19NThyskAMCqpRUOBSibPHam8AQD2W2pQuUkdpYMJkQJg9Lpx6jSor0kDB11piZX2Ab04AcB+SY1JrRnY1iurPAkA41Z5EgDG6FD8C+vnjJVGzcPDAAAAAElFTkSuQmCC" InformativeScreenshot="c9345e0e91adc1aa785b2c013ac78c5c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V3" Visibility="Interactive" />
                               </uix:NClick.Target>
@@ -206,7 +206,7 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <ueab:ExcelForEachRowX DisplayName="For Each Employee Data" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="534.6666666666666,7330" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;data&quot;)]" SaveAfterEachRow="True">
+                            <ueab:ExcelForEachRowX DisplayName="For Each Employee Data" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="572.8,9175.2" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;data&quot;)]" SaveAfterEachRow="True">
                               <ueab:ExcelForEachRowX.Body>
                                 <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                                   <ActivityAction.Argument1>
@@ -215,21 +215,21 @@
                                   <ActivityAction.Argument2>
                                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                   </ActivityAction.Argument2>
-                                  <Sequence DisplayName="Do For Each Record" sap:VirtualizedContainerService.HintSize="500.6666666666667,7106.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <Sequence DisplayName="Do For Each Record" sap:VirtualizedContainerService.HintSize="539.2,8957.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438.6666666666667,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" />
-                                    <TryCatch DisplayName="Try Catch EIN" sap:VirtualizedContainerService.HintSize="438.6666666666667,945.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="476.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" />
+                                    <TryCatch DisplayName="Try Catch EIN" sap:VirtualizedContainerService.HintSize="476.8,1430.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                       <TryCatch.Try>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'EIN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Timeout="3" Version="V3">
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'EIN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Timeout="1" Version="V3">
                                           <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="2a4ab156-5241-4a11-bb7f-240d1560b472" CvElementArea="928, 491, 221, 56" CvType="InputBox" DesignTimeRectangle="1557, 543, 260, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='3' tag='INPUT' type='input' class='bubble-element Input a1717069533519x3343' aaname='' /&gt;" Guid="e7b7c36a-57fb-42cf-9dab-66c9c0a0f69c" InformativeScreenshot="ca78ba540ceb43669d9f970db61e5465.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="b6f8ba31-d8e3-4421-ae2d-4525baedd22f" CvElementArea="791, 330, 223, 56" CvType="InputBox" DesignTimeRectangle="795, 333, 217, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='55' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='55' tag='INPUT' type='input' class='bubble-element Input a1717264541473x3343' aaname='' /&gt;" Guid="9ce41238-0a7f-47ac-a18c-6201a124ce72" InformativeScreenshot="a70bc29d48a0be254f798f2a80566f39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target CVScreenId="dde48136-dc8b-4a53-a569-0d87b868e7be" CvElementArea="1458, 397, 268, 68" CvTextArea="1421, 412, 37, 21" CvTextArgument="EIN" CvType="InputBox" DesignTimeRectangle="1418, 543, 399, 61" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='EIN' /&gt;" Guid="938045b3-6e0a-4ada-8ab5-64dcf423542d" SearchSteps="FuzzySelector, CV" />
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="b6f8ba31-d8e3-4421-ae2d-4525baedd22f" CvElementArea="791, 330, 223, 56" CvTextArea="759, 341, 31, 18" CvTextArgument="EIN" CvType="InputBox" DesignTimeRectangle="640, 333, 372, 51" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='37' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='EIN' /&gt;" Guid="86423bd0-a904-4d44-858d-d7b904664b40" SearchSteps="FuzzySelector, CV" />
                                                 </scg:List>
                                               </uix:TargetAnchorable.Anchors>
                                             </uix:TargetAnchorable>
@@ -247,7 +247,7 @@
                                         </uix:NTypeInto>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="443.2,832" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -258,34 +258,61 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                             </ActivityAction.Argument>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type EIN Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Version="V3">
-                                              <uix:NTypeInto.Target>
-                                                <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="031f13b7-df69-4573-be33-508d8af67086" CvElementArea="1293, 435, 265, 68" CvType="InputBox" DesignTimeRectangle="1297, 438, 259, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='20' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='20' tag='INPUT' type='input' class='bubble-element Input a1717125841959x3343' aaname='' /&gt;" Guid="9ae27393-7451-4678-b932-8c785c34af6d" InformativeScreenshot="6b8cc0d6f48e813c1341b1c69f1d1eec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                                                  <uix:TargetAnchorable.Anchors>
-                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                      <uix:Target CVScreenId="031f13b7-df69-4573-be33-508d8af67086" CvElementArea="1293, 435, 265, 68" CvTextArea="1295, 408, 37, 21" CvTextArgument="EIN" CvType="InputBox" DesignTimeRectangle="1282, 400, 306, 99" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='EIN' /&gt;" Guid="14087736-869c-4f09-82aa-c6ee57037127" SearchSteps="FuzzySelector, CV" />
-                                                    </scg:List>
-                                                  </uix:TargetAnchorable.Anchors>
-                                                </uix:TargetAnchorable>
-                                              </uix:NTypeInto.Target>
-                                              <uix:NTypeInto.VerifyOptions>
-                                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                                    <InArgument x:TypeArguments="x:Boolean" />
-                                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                                    <InArgument x:TypeArguments="x:Double" />
-                                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                                </uix:VerifyExecutionTypeIntoOptions>
-                                              </uix:NTypeInto.VerifyOptions>
-                                            </uix:NTypeInto>
+                                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,760.8" sap2010:WorkflowViewState.IdRef="TryCatch_11">
+                                              <TryCatch.Finally>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type EIN Fallback 2" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="49f87153-56e8-444f-a15e-8c1270e1d0fc" CvElementArea="940, 348, 221, 57" CvType="InputBox" DesignTimeRectangle="944, 351, 216, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='73' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='73' tag='INPUT' type='input' class='bubble-element Input a1717264541473x3343' aaname='' /&gt;" Guid="e0d9daf3-0a33-4efe-a917-6d4e9135b392" InformativeScreenshot="047039fc5b39835204d0c76464150a31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <uix:Target CVScreenId="49f87153-56e8-444f-a15e-8c1270e1d0fc" CvElementArea="940, 348, 221, 57" CvTextArea="1161, 360, 31, 18" CvTextArgument="EIN" CvType="InputBox" DesignTimeRectangle="944, 351, 328, 52" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='16' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='EIN' /&gt;" Guid="37d3be6f-a8ba-4aef-add4-0cb7525a453a" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                              </TryCatch.Finally>
+                                              <TryCatch.Try>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type EIN Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Timeout="1" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="031f13b7-df69-4573-be33-508d8af67086" CvElementArea="1293, 435, 265, 68" CvType="InputBox" DesignTimeRectangle="655, 364, 216, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='20' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='20' tag='INPUT' type='input' class='bubble-element Input a1717125841959x3343' aaname='' /&gt;" Guid="9ae27393-7451-4678-b932-8c785c34af6d" InformativeScreenshot="f4b491f7a66540cccd939fa8dde1dd11.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target CVScreenId="031f13b7-df69-4573-be33-508d8af67086" CvElementArea="1293, 435, 265, 68" CvTextArea="1295, 408, 37, 21" CvTextArgument="EIN" CvType="InputBox" DesignTimeRectangle="655, 333, 216, 82" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='EIN' /&gt;" Guid="14087736-869c-4f09-82aa-c6ee57037127" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                              </TryCatch.Try>
+                                            </TryCatch>
                                           </ActivityAction>
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <TryCatch DisplayName="Try Catch Company Name" sap:VirtualizedContainerService.HintSize="438.6666666666667,945.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                    <TryCatch DisplayName="Try Catch Company Name" sap:VirtualizedContainerService.HintSize="476.8,924" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                                       <TryCatch.Try>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Company Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_name&quot;).ToString]" Timeout="3" Version="V3">
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Company Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_name&quot;).ToString]" Timeout="1" Version="V3">
                                           <uix:NTypeInto.Target>
                                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="0bc4686d-24b9-4630-b5c5-14a50b0af06e" CvElementArea="2113, 447, 264, 67" CvType="InputBox" DesignTimeRectangle="2332, 1102, 260, 62" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='input' class='bubble-element Input a1717035854622x3343' aaname='' /&gt;" Guid="73185980-c858-4ad9-ad6d-0050a99dfff7" InformativeScreenshot="98d2797f377ccb9b1469dc7ae141e217.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
@@ -308,7 +335,7 @@
                                         </uix:NTypeInto>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,325.6" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -319,7 +346,7 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                             </ActivityAction.Argument>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Company Name Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_name&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Company Name Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_name&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="c32d5c46-5ec7-4fd5-939b-9f568f348c99" CvElementArea="2949, 611, 180, 68" CvType="InputBox" DesignTimeRectangle="2954, 615, 174, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='25' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='25' tag='INPUT' type='input' class='bubble-element Input a1717127251785x3343' aaname='' /&gt;" Guid="f3a0e9aa-93df-4afb-a7ef-e50a14173f1c" InformativeScreenshot="b9fb762b7468ee5e8fee65c7a47e77c8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -344,9 +371,9 @@
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <TryCatch DisplayName="Try Catch Sector" sap:VirtualizedContainerService.HintSize="438.6666666666667,945.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                    <TryCatch DisplayName="Try Catch Sector" sap:VirtualizedContainerService.HintSize="476.8,924" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                       <TryCatch.Try>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Sector'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;sector&quot;).ToString]" Timeout="3" Version="V3">
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Sector'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;sector&quot;).ToString]" Timeout="1" Version="V3">
                                           <uix:NTypeInto.Target>
                                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="a09ae7b6-2689-43bd-9c73-a2a3156da742" CvElementArea="1189, 491, 223, 56" CvType="InputBox" DesignTimeRectangle="3404, 438, 259, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='7' tag='INPUT' type='input' class='bubble-element Input a1717070155558x3343' aaname='' /&gt;" Guid="ef364619-33b0-4e71-b67d-236f7b77bbf1" InformativeScreenshot="a73eace32e95ae44b05c587e02e45391.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
@@ -369,7 +396,7 @@
                                         </uix:NTypeInto>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,325.6" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -380,7 +407,7 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                             </ActivityAction.Argument>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Sector Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;sector&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Sector Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;sector&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="57ef723e-5123-467e-b97c-25a152d8488b" CvElementArea="2681, 485, 265, 68" CvType="InputBox" DesignTimeRectangle="3168, 804, 260, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='33' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='33' tag='INPUT' type='input' class='bubble-element Input a1717127251785x3343' aaname='' /&gt;" Guid="30401423-d55a-407e-87a5-59909974c1fa" InformativeScreenshot="3db6682f7fdb804cc84c79ce7b802b85.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -405,9 +432,9 @@
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <TryCatch DisplayName="Try Catch Automation Tool" sap:VirtualizedContainerService.HintSize="438.6666666666667,945.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                                    <TryCatch DisplayName="Try Catch Automation Tool" sap:VirtualizedContainerService.HintSize="476.8,1561.6" sap2010:WorkflowViewState.IdRef="TryCatch_8">
                                       <TryCatch.Try>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Automation Tool'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Timeout="3" Version="V3">
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Automation Tool'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Timeout="1" Version="V3">
                                           <uix:NTypeInto.Target>
                                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="c4bfb9c6-0d52-473d-93bf-4129232881a9" CvElementArea="2117, 735, 266, 68" CvType="InputBox" DesignTimeRectangle="2685, 666, 259, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='4' tag='INPUT' type='input' class='bubble-element Input a1717115886126x3343' aaname='' /&gt;" Guid="e08afd2f-67ce-4d8c-ba79-d79189d78969" InformativeScreenshot="e42e7ad33d674be3138a205a83eca8a2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
@@ -430,7 +457,7 @@
                                         </uix:NTypeInto>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="443.2,963.2" sap2010:WorkflowViewState.IdRef="Catch`1_8">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -441,39 +468,79 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                             </ActivityAction.Argument>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Automation Tool'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_16" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Version="V3">
-                                              <uix:NTypeInto.Target>
-                                                <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" DesignTimeRectangle="2532, 657, 259, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='39' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='39' tag='INPUT' type='input' class='bubble-element Input a1717126530996x3348' aaname='' /&gt;" Guid="008cc475-7752-4c03-8a4c-f9156ea59ae2" InformativeScreenshot="9044587b88004d5f0e47df29f685b6b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
-                                                  <uix:TargetAnchorable.Anchors>
-                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                      <uix:Target DesignTimeRectangle="2512, 618, 306, 138" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='27' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Automation Tool' /&gt;" Guid="f053a406-5972-4337-91c4-bc56c5d2a633" SearchSteps="FuzzySelector" />
-                                                    </scg:List>
-                                                  </uix:TargetAnchorable.Anchors>
-                                                </uix:TargetAnchorable>
-                                              </uix:NTypeInto.Target>
-                                              <uix:NTypeInto.VerifyOptions>
-                                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                                    <InArgument x:TypeArguments="x:Boolean" />
-                                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                                    <InArgument x:TypeArguments="x:Double" />
-                                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                                </uix:VerifyExecutionTypeIntoOptions>
-                                              </uix:NTypeInto.VerifyOptions>
-                                            </uix:NTypeInto>
+                                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,892" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                              <TryCatch.Try>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Automation Tool'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Timeout="1" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" DesignTimeRectangle="2532, 657, 259, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='39' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='39' tag='INPUT' type='input' class='bubble-element Input a1717126530996x3348' aaname='' /&gt;" Guid="008cc475-7752-4c03-8a4c-f9156ea59ae2" InformativeScreenshot="9044587b88004d5f0e47df29f685b6b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="2512, 618, 306, 138" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='27' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Automation Tool' /&gt;" Guid="f053a406-5972-4337-91c4-bc56c5d2a633" SearchSteps="FuzzySelector" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                              </TryCatch.Try>
+                                              <TryCatch.Catches>
+                                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,325.6" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ActivityAction x:TypeArguments="s:Exception">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                    </ActivityAction.Argument>
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Automation Tool'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Version="V3">
+                                                      <uix:NTypeInto.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="64cfdc28-7a7a-486b-ba1f-67e1a9288659" CvElementArea="3018, 642, 313, 69" CvType="InputBox" DesignTimeRectangle="3023, 645, 306, 62" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='79' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='79' tag='INPUT' type='input' class='bubble-element Input a1717256518775x3343' aaname='' /&gt;" Guid="d9152b5b-3320-4614-b1b3-a6d330b838d8" InformativeScreenshot="7b6724be95ad877dc65bd2abe7542add.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CVScreenId="64cfdc28-7a7a-486b-ba1f-67e1a9288659" CvElementArea="3018, 642, 313, 69" CvTextArea="3039, 615, 172, 21" CvTextArgument="Automation Tool" CvType="InputBox" DesignTimeRectangle="3023, 608, 306, 99" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='56' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Automation Tool' /&gt;" Guid="5c7a1392-430a-4562-aca9-5bc0fe9d31c3" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NTypeInto.Target>
+                                                      <uix:NTypeInto.VerifyOptions>
+                                                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                            <InArgument x:TypeArguments="x:Boolean" />
+                                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                            <InArgument x:TypeArguments="x:Double" />
+                                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        </uix:VerifyExecutionTypeIntoOptions>
+                                                      </uix:NTypeInto.VerifyOptions>
+                                                    </uix:NTypeInto>
+                                                  </ActivityAction>
+                                                </Catch>
+                                              </TryCatch.Catches>
+                                            </TryCatch>
                                           </ActivityAction>
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <TryCatch DisplayName="Try Catch Address" sap:VirtualizedContainerService.HintSize="438.6666666666667,945.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                    <TryCatch DisplayName="Try Catch Address" sap:VirtualizedContainerService.HintSize="476.8,1561.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                       <TryCatch.Try>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_address&quot;).ToString]" Timeout="3" Version="V3">
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_address&quot;).ToString]" Timeout="1" Version="V3">
                                           <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="c4bfb9c6-0d52-473d-93bf-4129232881a9" CvElementArea="2425, 447, 267, 69" CvType="InputBox" DesignTimeRectangle="2431, 451, 259, 62" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='8' tag='INPUT' type='input' class='bubble-element Input a1717115886126x3343' aaname='' /&gt;" Guid="ea61f86b-5ea1-4312-a44c-5917377d6d25" InformativeScreenshot="a7944606c5077ef066ebb261ac8e7ce1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="13d359ff-6d60-4ac0-b642-79661110f49c" CvElementArea="1343, 433, 222, 57" CvType="InputBox" DesignTimeRectangle="1348, 436, 216, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='24' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='24' tag='INPUT' type='input' class='bubble-element Input a1717266086885x3343' aaname='' /&gt;" Guid="a9c81d45-7db0-4e46-955c-2d1cf23dc9d8" InformativeScreenshot="b051d0c2e5f9cf1f4b4c922d6a773e5d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target CVScreenId="a3c17d14-0f64-471a-aaf7-3fc7bf55ab1d" CvElementArea="2425, 448, 267, 69" CvTextArea="2428, 411, 87, 19" CvTextArgument="Address" CvType="InputBox" DesignTimeRectangle="2416, 394, 306, 119" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Address' /&gt;" Guid="d25b28cb-30ce-4e2f-a9b1-521cfe0804ad" SearchSteps="FuzzySelector, CV" />
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="13d359ff-6d60-4ac0-b642-79661110f49c" CvElementArea="1343, 433, 222, 57" CvTextArea="1266, 445, 72, 18" CvTextArgument="Address" CvType="InputBox" DesignTimeRectangle="1267, 436, 297, 52" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='11' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Address' /&gt;" Guid="3e9071c4-b82f-4fee-a2e2-6a836ad31847" SearchSteps="FuzzySelector, CV" />
                                                 </scg:List>
                                               </uix:TargetAnchorable.Anchors>
                                             </uix:TargetAnchorable>
@@ -491,10 +558,10 @@
                                         </uix:NTypeInto>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="443.2,963.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -502,34 +569,74 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                             </ActivityAction.Argument>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Address Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_address&quot;).ToString]" Version="V3">
-                                              <uix:NTypeInto.Target>
-                                                <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="a84de823-f1a4-4327-9359-48ac5fc8157c" CvElementArea="3134, 522, 267, 67" CvType="InputBox" DesignTimeRectangle="3139, 525, 260, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='48' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='48' tag='INPUT' type='input' class='bubble-element Input a1717126530996x3348' aaname='' /&gt;" Guid="3952c5af-70c6-4b77-b3cd-5857bd5cc5c8" InformativeScreenshot="b6252fa1c8add7c6352c07497a224618.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                                                  <uix:TargetAnchorable.Anchors>
-                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                      <uix:Target CVScreenId="a84de823-f1a4-4327-9359-48ac5fc8157c" CvElementArea="3134, 522, 267, 67" CvTextArea="3041, 537, 87, 19" CvTextArgument="Address" CvType="InputBox" DesignTimeRectangle="3042, 525, 357, 61" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='39' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Address' /&gt;" Guid="da259659-8791-4ae9-be24-2b5f22cf61d0" SearchSteps="FuzzySelector, CV" />
-                                                    </scg:List>
-                                                  </uix:TargetAnchorable.Anchors>
-                                                </uix:TargetAnchorable>
-                                              </uix:NTypeInto.Target>
-                                              <uix:NTypeInto.VerifyOptions>
-                                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                                    <InArgument x:TypeArguments="x:Boolean" />
-                                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                                    <InArgument x:TypeArguments="x:Double" />
-                                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                                </uix:VerifyExecutionTypeIntoOptions>
-                                              </uix:NTypeInto.VerifyOptions>
-                                            </uix:NTypeInto>
+                                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,892" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                                              <TryCatch.Try>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Address Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_address&quot;).ToString]" Timeout="1" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="a84de823-f1a4-4327-9359-48ac5fc8157c" CvElementArea="3134, 522, 267, 67" CvType="InputBox" DesignTimeRectangle="2684, 753, 259, 62" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='48' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='48' tag='INPUT' type='input' class='bubble-element Input a1717126530996x3348' aaname='' /&gt;" Guid="3952c5af-70c6-4b77-b3cd-5857bd5cc5c8" InformativeScreenshot="c657584a4053ccb4bf408f354f9fe0a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target CVScreenId="a84de823-f1a4-4327-9359-48ac5fc8157c" CvElementArea="3134, 522, 267, 67" CvTextArea="3041, 537, 87, 19" CvTextArgument="Address" CvType="InputBox" DesignTimeRectangle="2684, 753, 372, 62" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='39' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Address' /&gt;" Guid="da259659-8791-4ae9-be24-2b5f22cf61d0" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                              </TryCatch.Try>
+                                              <TryCatch.Catches>
+                                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,325.6" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ActivityAction x:TypeArguments="s:Exception">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                    </ActivityAction.Argument>
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Address Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;company_address&quot;).ToString]" Version="V3">
+                                                      <uix:NTypeInto.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="04bde7b5-c024-4f22-8e26-3fe7af5ab171" CvElementArea="3372, 642, 313, 69" CvType="InputBox" DesignTimeRectangle="3377, 645, 306, 62" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='81' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='81' tag='INPUT' type='input' class='bubble-element Input a1717256518775x3343' aaname='' /&gt;" Guid="8aba9243-907a-41e4-856d-9b104bc89af6" InformativeScreenshot="e4c0693d01df60b9d11602cfc9cdc399.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CVScreenId="04bde7b5-c024-4f22-8e26-3fe7af5ab171" CvElementArea="3372, 642, 313, 69" CvTextArea="3373, 615, 87, 21" CvTextArgument="Address" CvType="InputBox" DesignTimeRectangle="3377, 608, 306, 99" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='57' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Address' /&gt;" Guid="ec1586af-cbd1-4119-ad3a-d6daa75fa733" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NTypeInto.Target>
+                                                      <uix:NTypeInto.VerifyOptions>
+                                                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                            <InArgument x:TypeArguments="x:Boolean" />
+                                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                            <InArgument x:TypeArguments="x:Double" />
+                                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        </uix:VerifyExecutionTypeIntoOptions>
+                                                      </uix:NTypeInto.VerifyOptions>
+                                                    </uix:NTypeInto>
+                                                  </ActivityAction>
+                                                </Catch>
+                                              </TryCatch.Catches>
+                                            </TryCatch>
                                           </ActivityAction>
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <TryCatch DisplayName="Try Catch Annual Saving" sap:VirtualizedContainerService.HintSize="438.6666666666667,945.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                    <TryCatch DisplayName="Try Catch Annual Saving" sap:VirtualizedContainerService.HintSize="476.8,924" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                       <TryCatch.Try>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Annual Saving'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;annual_automation_saving&quot;).ToString]" Timeout="3" Version="V3">
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Annual Saving'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;annual_automation_saving&quot;).ToString]" Timeout="1" Version="V3">
                                           <uix:NTypeInto.Target>
                                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="5f6ad5d1-652e-4a3b-9f80-499db4b1aa49" CvElementArea="2638, 736, 266, 68" CvType="InputBox" DesignTimeRectangle="2643, 739, 259, 62" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='20' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='20' tag='INPUT' type='input' class='bubble-element Input a1717126101805x3343' aaname='' /&gt;" Guid="c268f853-4e5b-47a7-9a74-00e925d4f1ad" InformativeScreenshot="06c41aaf59cd1ec140b2954535c8ddec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
@@ -552,7 +659,7 @@
                                         </uix:NTypeInto>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,325.6" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -563,7 +670,7 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                             </ActivityAction.Argument>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Annual Saving FallBack" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;annual_automation_saving&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Annual Saving FallBack" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;annual_automation_saving&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="c4bfb9c6-0d52-473d-93bf-4129232881a9" CvElementArea="2429, 734, 268, 68" CvType="InputBox" DesignTimeRectangle="2435, 738, 260, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='6' tag='INPUT' type='input' class='bubble-element Input a1717115886126x3343' aaname='' /&gt;" Guid="983fa859-8e03-4934-a2f8-396ece5772fe" InformativeScreenshot="ccd6ce35923a2f61010eb18e77af99b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -588,9 +695,9 @@
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <TryCatch DisplayName="Try Catch Date" sap:VirtualizedContainerService.HintSize="438.6666666666667,945.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                                    <TryCatch DisplayName="Try Catch Date" sap:VirtualizedContainerService.HintSize="476.8,924" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                                       <TryCatch.Try>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;date_of_first_project&quot;).ToString]" Timeout="3" Version="V3">
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;date_of_first_project&quot;).ToString]" Timeout="1" Version="V3">
                                           <uix:NTypeInto.Target>
                                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" DesignTimeRectangle="2695, 1135, 259, 62" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='42' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='42' tag='INPUT' type='input' class='bubble-element Input a1717121659328x3343' aaname='' /&gt;" Guid="3094961d-d7e2-4e18-b41a-1e25cf2b7c6b" InformativeScreenshot="32701ed3eb792a6f7f3333f304cffb8d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
@@ -613,7 +720,7 @@
                                         </uix:NTypeInto>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,325.6" sap2010:WorkflowViewState.IdRef="Catch`1_7">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -624,7 +731,7 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                             </ActivityAction.Argument>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Date Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,260.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;date_of_first_project&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Date Fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="Simulate" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Text="[CurrentRow(&quot;date_of_first_project&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="f140fe5c-23eb-41ab-baff-14bb95d4244f" CvElementArea="2317, 839, 267, 67" CvType="InputBox" DesignTimeRectangle="2322, 843, 259, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tabindex='53' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='53' tag='INPUT' type='input' class='bubble-element Input a1717128036563x3348' aaname='' /&gt;" Guid="80b32944-27ca-47a4-a6ec-f7ad059f28bc" InformativeScreenshot="d955daa911c6d9f14e12799d8c10a1f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -649,9 +756,24 @@
                                         </Catch>
                                       </TryCatch.Catches>
                                     </TryCatch>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="438.6666666666667,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Version="V3">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="476.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Version="V3">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="39a0f183-845e-479b-8755-9848e86957bb" CvElementArea="3501, 746, 250, 83" CvTextArea="3581, 780, 85, 19" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="2298, 672, 245, 75" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Submit' tabindex='27' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tabindex='27' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Submit' /&gt;" Guid="019f1df0-68f6-4ecb-b113-d214f0f414d4" InformativeScreenshot="9e2215e73e5b365e07771129d171d876.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click ReCaptcha" sap:VirtualizedContainerService.HintSize="476.8,218.4" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee1dbb0-a6fb-458d-b9ae-35e1a9bdf252" Timeout="0.2" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="6c7843d3-6903-417b-a21f-629330ad4970" CvElementArea="786, 517, 40, 39" CvType="CheckBox" DesignTimeRectangle="788, 517, 38, 38" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='presentation' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='presentation' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='presentation' /&gt;" Guid="5c430c4c-4c22-4213-90f3-9e738b72f7a0" InformativeScreenshot="2f02196f2a1c17e5882af39760bb9ec8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                                       </uix:NClick.Target>
                                       <uix:NClick.VerifyOptions>
                                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
