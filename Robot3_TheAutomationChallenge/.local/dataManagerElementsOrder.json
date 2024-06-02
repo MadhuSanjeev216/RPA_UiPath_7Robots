@@ -12,7 +12,6 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "isClicked&Sequence_1",
         "dt_CompanyData&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
